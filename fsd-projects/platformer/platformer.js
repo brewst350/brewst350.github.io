@@ -27,27 +27,27 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-     toggleGrid();
+     //toggleGrid();
 
 
     // TODO 2 - Create Platforms
-       createPlatform(250, 650, 55, 25)
-       createPlatform(425, 590, 25, 20)
-       createPlatform(425, 470, 20, 20)
-       createPlatform(575, 450, 30, 60)
-       createPlatform(975, 600, 70, 35)
-       createPlatform(975, 620, 30, 195)
-       createPlatform(975, 1, 20, 475)
-       createPlatform(1250, 1, 20, 650)
-       createPlatform(1380, 620, 20, 20)
-       createPlatform(1380, 500, 20, 20)
-       createPlatform(1380, 380, 20, 20)
-       createPlatform(1380,260, 20, 20)
-       createPlatform(1200, 500, 50, 20)
-       createPlatform(990, 450, 60, 20)
-       createPlatform(1200, 350, 50, 20)
-       createPlatform(990, 290, 50, 20)
-       createPlatform(1200, 200, 50, 20)
+       createPlatform(250, 650, 55, 25, "#810000")
+       createPlatform(425, 590, 25, 20, "orange")
+       createPlatform(425, 470, 20, 20, "orange")
+       createPlatform(575, 450, 50, 60, "orange")
+       createPlatform(975, 600, 70, 35, "yellow")
+       createPlatform(975, 620, 30, 195, "yelllow")
+       createPlatform(975, 1, 20, 475,"red")
+       createPlatform(1250, 1, 20, 650,"red")
+       createPlatform(1380, 620, 20, 20,"red")
+       createPlatform(1380, 500, 20, 20, "red")
+       createPlatform(1380, 380, 20, 20,"orange")
+       createPlatform(1380,260, 20, 20, "yellow")
+       createPlatform(1200, 500, 50, 20, "#E5B80B")
+       createPlatform(990, 450, 60, 20, "#E5B80B")
+       createPlatform(1200, 350, 50, 20, "#E5B80B")
+       createPlatform(990, 290, 50, 20, "#E5B80B")
+       createPlatform(1200, 200, 50, 20, "#E5B80B")
        
 
 
@@ -60,10 +60,10 @@ $(function () {
 
     
     // TODO 4 - Create Cannons
-    createCannon("top", 350, 1000)
-    createCannon("right", 800, 1000)
-    createCannon("top", 1285, 950)
-    createCannon("top", 1080, 1150)
+    createCannon("top", 350, 1000,)
+    createCannon("right", 800, 1700)
+    createCannon("top", 1285, 1950)
+    createCannon("top", 1080, 3250)
 
     
     
