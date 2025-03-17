@@ -31,7 +31,6 @@
 <body class="board">
 	<!-- HTML for the box -->
 	<div class="box">?</div>
-
 	<script>
 		(function () {
 			'use strict'
@@ -66,12 +65,14 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
-		
+		var positionY;
+		var speedY;
 		var positionX = 0
 		var points
 		points = 0
 		var speed;
 		speed = 10
+		var boardHeight = jQuery(window).height();
 		
 
 			/* 
@@ -85,6 +86,10 @@
 				if (positionX > boardWidth){
 					speed = speed * -1;
 				}
+				if (positionX <0 ) {
+					speed *= -1;
+					moveBoxTo(positionX, positionY);
+}
 			
 				
 			};
@@ -95,19 +100,21 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-positionX = 0;;
+positionX = 0;
 points = points + 1;
-speed = speed + 3 
+speed = 3 * points + 10;
 changeBoxText(points)
 
 			};
+			function moveBoxTo(newPositionX, newPositionY) {
+  box.css("left", newPositionX);
+  box.css("top", newPositionY);
+}
 
 
 
 
-
-		})();
+		})(); 
 	</script>
 </body>
-
 </html>
